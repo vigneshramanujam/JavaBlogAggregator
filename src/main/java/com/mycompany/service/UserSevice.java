@@ -17,6 +17,7 @@ import com.mycompany.repository.ItemRepository;
 import com.mycompany.repository.UserRepository;
 
 @Service
+@Transactional
 public class UserSevice {
 
 	
@@ -49,6 +50,11 @@ public class UserSevice {
 		}
 		user.setBlogs(blogs);
 		return user;
+	}
+
+	public void save(User user) {
+		// TODO Auto-generated method stub
+		userRepository.save(user);
 	}
 	
 }

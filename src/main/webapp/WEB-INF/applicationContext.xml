@@ -41,5 +41,5 @@
 	
 	<jpa:repositories base-package="com.mycompany.repository"></jpa:repositories>	
 	
-	
+	<import resource="/security.xml"/>
 </beans>
